@@ -7,8 +7,9 @@ makeCacheMatrix <- function(x = matrix()) {
 ## initialize the value of the matrix inverse to NULL
 matrixinverse <- NULL
         
-## delcare another function set where the value will be cached in 1. Matrix is created
-## for the first time. 2. changes made to cached matrix
+## declare another function set where the value will be cached in:
+## 1. Matrix is created for the first time.
+## 2. changes made to cached matrix
 set <- function(y){
         x <<- y
         ## change the value of inverse of the matrix in case the matrix was changed.
